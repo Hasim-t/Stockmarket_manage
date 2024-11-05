@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
   Timer? debounceTimer;
   
 
-  void _searchStock(String symbol) async {
+  void searchStock(String symbol) async {
     if (symbol.isEmpty) {
       setState(() {
         _result = '';
@@ -135,7 +135,7 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
                     _result,
-                    style: TextStyle(fontSize: 16),
+                    style: const TextStyle(fontSize: 16),
                     textAlign: TextAlign.center,
                   ),
                 ),
